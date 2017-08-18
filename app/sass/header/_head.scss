@@ -165,11 +165,12 @@
   ul {
     position: relative;
     float: left;
-    max-width: 320px;
+    max-width: 360px;
     margin-left: 60px;
     padding: 0;
     @include breakpoint(max-width 1200px) {
       margin-left: 30px;
+      max-width: 320px;
     }
     @include breakpoint(max-width 992px) {
       max-width: 100%;
