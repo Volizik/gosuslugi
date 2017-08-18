@@ -1,0 +1,98 @@
+.nav{
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #0b234f;
+  &__menu-btn {
+    display: none;
+    width: 50px;
+    height: 90px;
+    position: relative;
+    float: left;
+    z-index: 15;
+    @include breakpoint(max-width 992px) {
+      display: block;
+    }
+    span, span:before, span:after {
+      display: block;
+      height: 2px;
+      width: 18px;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      margin-left: -9px;
+      top: 50%;
+      margin-top: -1px;
+    }
+    span:before {
+      transition: all 0.2s;
+      margin-top: -6px;
+      content: '';
+    }
+    span:after {
+      transition: all 0.2s;
+      margin-top: 4px;
+      content: '';
+    }
+    &_active span {
+      background-color: transparent;
+      &:before {
+        transform: rotate(135deg);
+        margin-top: 0;
+      }
+      &:after {
+        transform: rotate(-134deg);
+        margin-top: 0;
+      }
+    }
+  }
+  &__menu {
+    position: relative;
+    float: left;
+    width:calc(100% - 150px);
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    @include breakpoint(max-width 992px) {
+      display: none;
+      position: absolute;
+      top: 89px;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      width: 300px;
+      background-color: #0b234f;
+      height: calc(100vh - 90px);
+      max-height: 400px;
+    }
+    @include breakpoint(max-width 600px) {
+      width: calc(100% - 20px);
+    }
+    li {
+      list-style: none;
+      position: relative;
+      a {
+        display: block;
+        position: relative;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 16px;
+        font-family: $GilroyMedium;
+        padding: 23px 0;
+        @include breakpoint(max-width 992px) {
+          padding: 0;
+        }
+        @include breakpoint(max-width 600px) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  &__logo {
+    position: relative;
+    float: right;
+  }
+}

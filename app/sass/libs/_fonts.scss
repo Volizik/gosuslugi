@@ -1,5 +1,50 @@
-//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
-//@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+$MuseoCyrl: 'Museo-Cyrl';
+$GilroyRegularItalic: 'Gilroy-RegularItalic';
+$GilroyRegular: 'Gilroy-Regular';
+$GilroyMedium: 'Gilroy-Medium';
+$GilroyBold: 'Gilroy-Bold';
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/Gilroy-Bold/Gilroy-Bold.eot') format('embedded-opentype'),
+  url('../fonts/Gilroy-Bold/Gilroy-Bold.woff') format('woff'),
+  url('../fonts/Gilroy-Bold/Gilroy-Bold.ttf') format('truetype'),
+  url('../fonts/Gilroy-Bold/Gilroy-Bold.svg') format('svg');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../fonts/Gilroy-Medium/Gilroy-Medium.eot') format('embedded-opentype'),
+  url('../fonts/Gilroy-Medium/Gilroy-Medium.woff') format('woff'),
+  url('../fonts/Gilroy-Medium/Gilroy-Medium.ttf') format('truetype'),
+  url('../fonts/Gilroy-Medium/Gilroy-Medium.svg') format('svg');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy-Regular/Gilroy-Regular.eot') format('embedded-opentype'),
+  url('../fonts/Gilroy-Regular/Gilroy-Regular.woff') format('woff'),
+  url('../fonts/Gilroy-Regular/Gilroy-Regular.ttf') format('truetype'),
+  url('../fonts/Gilroy-Regular/Gilroy-Regular.svg') format('svg');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy-RegularItalic';
+  src: url('../fonts/Gilroy-Regular/Gilroy-Regular.eot') format('embedded-opentype'),
+  url('../fonts/Gilroy-Regular/Gilroy-Regular.woff') format('woff'),
+  url('../fonts/Gilroy-Regular/Gilroy-Regular.ttf') format('truetype'),
+  url('../fonts/Gilroy-Regular/Gilroy-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Museo-Cyrl';
+  src: url('../fonts/Museo-Cyrl/MuseoCyrl500.eot') format('embedded-opentype'),
+  url('../fonts/Museo-Cyrl/MuseoCyrl500.woff') format('woff'),
+  url('../fonts/Museo-Cyrl/MuseoCyrl500.ttf') format('truetype'),
+  url('../fonts/Museo-Cyrl/MuseoCyrl500.svg') format('svg');
+  font-weight: 500;
+}
