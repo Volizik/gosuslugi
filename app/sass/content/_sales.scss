@@ -1,0 +1,111 @@
+.sales {
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+  h3 {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 0;
+    font-size: 36px;
+    &:last-of-type {
+      color: $blue;
+      background-color: #fff;
+    }
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    li {
+      list-style: none;
+      box-sizing: border-box;
+      padding: 30px 25px;
+      background: #fff;
+      margin-top: 55px;
+      transition: .3s;
+      &:hover {
+        box-shadow: 7px 7px 40px 0 #183254;
+        transition: .3s;
+      }
+      p {
+        font-family: $MuseoCyrl;
+        font-size: 18px;
+        color: #000;
+        &:last-of-type {
+          font-family: $GilroyRegular;
+          font-size: 15px;
+        }
+        span {
+          font-family: $MuseoCyrl;
+          font-size: 26px;
+          display: block;
+        }
+      }
+      >span {
+        font-family: $MuseoCyrl;
+        font-size: 18px;
+        color: #000;
+        display: block;
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+      }
+      button {
+        font-size: 18px;
+        font-family: $MuseoCyrl;
+        border:none;
+        padding: 10px 20px;
+        background-color: #51af9d;
+      }
+    }
+    .best {
+      margin-top: 0;
+      &:before {
+        content: '';
+        display: block;
+        position: relative;
+        background: url(../img/icons/like.png) center center no-repeat;
+        height: 50px;
+        width: 100%;
+        margin-bottom: 6px;
+      }
+    }
+  }
+  &__link {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-left: 40px;
+    &:after {
+      content: '';
+      display: block;
+      position: relative;
+      float: left;
+      height: 100px;
+      width: 90px;
+      border-bottom: 5px dashed #51af9d;
+      border-right: 5px dashed #51af9d;
+      margin-left: 10px;
+      @include breakpoint(max-width 1200px) {
+        display: none;
+      }
+    }
+    h2 {
+      font-family: $MuseoCyrl;
+      font-size: 36px;
+      position: relative;
+      float: left;
+      padding: 20px;
+      margin: 40px 0;
+      &:first-of-type {
+        background-color: #f6d229;
+        color: #000;
+      }
+      &:last-of-type {
+        background-color: #51af9d;
+        color: #fff;
+      }
+    }
+  }
+}
