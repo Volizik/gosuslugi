@@ -20,7 +20,7 @@
     text-align: left;
     height: 220px;
     @include breakpoint(max-width 992px) {
-      height: 200px;
+      height: auto;
       width: 100%;
     }
     img {

@@ -18,6 +18,14 @@
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
+    padding: 0;
+    @include breakpoint(max-width 992px) {
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+    @include breakpoint(max-width 659px) {
+      align-items: center;
+    }
     li {
       list-style: none;
       box-sizing: border-box;
@@ -25,6 +33,11 @@
       background: #fff;
       margin-top: 55px;
       transition: .3s;
+      @include breakpoint(max-width 992px) {
+        width: 200px;
+        height: 280px;
+        margin: 0 auto 20px;
+      }
       &:hover {
         box-shadow: 7px 7px 40px 0 #183254;
         transition: .3s;
@@ -61,6 +74,7 @@
     }
     .best {
       margin-top: 0;
+      height: 335px;
       &:before {
         content: '';
         display: block;
@@ -77,6 +91,9 @@
     float: left;
     width: 100%;
     margin-left: 40px;
+    @include breakpoint(max-width 992px) {
+      display: none;
+    }
     &:after {
       content: '';
       display: block;
