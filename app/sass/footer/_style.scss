@@ -19,7 +19,11 @@
       flex-wrap: wrap;
     }
     @include breakpoint(max-width 500px) {
-      padding: 30px;
+      padding: 0;
+      align-items: flex-start;
+    }
+    @include breakpoint(max-height 500px) {
+      margin-bottom: 80px;
     }
     &:before {
       content: '';
@@ -47,6 +51,9 @@
       @include breakpoint(max-width 1200px) {
         width: 300px;
       }
+      @include breakpoint(max-width 500px) {
+        font-size: 15px;
+      }
       span {
         color: #fff;
       }
@@ -62,6 +69,7 @@
     margin: 30px 0;
     width: 100%;
     text-align: center;
+    padding: 0 20px;
     span {
       display: block;
       width: 100%;
@@ -69,5 +77,32 @@
       font-family: $GilroyRegular;
       font-size: 16px;
     }
+  }
+}
+
+
+
+.social {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 400px;
+  @include breakpoint(max-height 700px) {
+    top: 320px;
+  }
+  @include breakpoint(max-height 500px) {
+    flex-direction: row;
+    position: absolute;
+    top: auto;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 35px;
+  }
+  @include breakpoint(max-width 440px) {
+    bottom: 120px;
+  }
+  @include breakpoint(max-width 383px) {
+    bottom: 140px;
   }
 }
