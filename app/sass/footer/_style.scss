@@ -1,0 +1,73 @@
+.footer {
+  position: relative;
+  width: 100%;
+  margin-top: 90px;
+  float: left;
+  &__links {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 0 40px 10px #1f3f69;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px;
+    box-sizing: border-box;
+    @include breakpoint(max-width 1200px) {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    @include breakpoint(max-width 500px) {
+      padding: 30px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 95%;
+      height: 90%;
+      border: 1px solid #51af9d;
+      left: 2.5%;
+      top: 5%;
+      @include breakpoint(max-width 500px) {
+        height: 95%;
+        top: 2.5%;
+      }
+    }
+    a {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      width: 33%;
+      padding: 30px;
+      box-sizing: border-box;
+      font-family: $MuseoCyrl;
+      font-size: 18px;
+      color: #fff;
+      @include breakpoint(max-width 1200px) {
+        width: 300px;
+      }
+      span {
+        color: #fff;
+      }
+      img {
+        position: relative;
+        margin-right: 20px;
+        object-fit: none;
+      }
+    }
+  }
+  p {
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+    span {
+      display: block;
+      width: 100%;
+      padding-top: 5px;
+      font-family: $GilroyRegular;
+      font-size: 16px;
+    }
+  }
+}
