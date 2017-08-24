@@ -22,6 +22,9 @@
       padding: 0;
       align-items: flex-start;
     }
+    @include breakpoint(max-width 440px) {
+      margin-bottom: 80px;
+    }
     @include breakpoint(max-height 500px) {
       margin-bottom: 80px;
     }
@@ -100,6 +103,12 @@
     height: 35px;
   }
   @include breakpoint(max-width 440px) {
+    flex-direction: row;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%);
+    height: 35px;
     bottom: 120px;
   }
   @include breakpoint(max-width 383px) {
