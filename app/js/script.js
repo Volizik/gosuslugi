@@ -26,7 +26,7 @@ $(document).ready(function () {
     //!header form tabs-----------------------------------------------------
 
 
-    //show comments in mobile
+    //show comments in mobile-----------------------------------------------
     $(document).on('click', '.show-comment', function () {
         event.preventDefault();
         if ($('.reviews__bottom').is(':visible')) {
@@ -37,8 +37,16 @@ $(document).ready(function () {
             $('.reviews__bottom').css('display', 'flex');
             $(this).addClass('rotate180');
         }
-
-
     });
-    //!show comments in mobile
+    //!show comments in mobile----------------------------------------------------
+
+    //show statements in mobile---------------------------------------------------
+    $(document).on('click', '.show-statements', function () {
+        event.preventDefault();
+        $('.statements__wrap a:nth-of-type(3)').slideToggle();
+        $('.statements__wrap a:nth-of-type(4)').slideToggle();
+        $('.statements__wrap a:nth-of-type(5)').slideToggle();
+        $(this).toggleClass('rotate180');
+    });
+    //!show statements in mobile--------------------------------------------------
 });

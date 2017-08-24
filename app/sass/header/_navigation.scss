@@ -94,5 +94,10 @@
   &__logo {
     position: relative;
     float: right;
+    height: 90px;
+    width: 90px;
+    img {
+      max-width: 100%;
+    }
   }
 }

@@ -23,3 +23,31 @@ $blue: #264e82;
 .red {
   color: #eb604b;
 }
+
+.rotate180 {
+  transform: rotate(180deg);
+  transition: 1s;
+}
+
+.show-comment,
+.show-statements {
+  display: none;
+  width: 100%;
+  height: 40px;
+  object-fit: none;
+  transition: 1s;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.show-comment {
+  @include breakpoint(max-width 579px) {
+    display: block;
+  }
+}
+.show-statements {
+  @include breakpoint(max-width 469px) {
+    display: block;
+  }
+}
