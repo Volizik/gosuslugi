@@ -18,9 +18,9 @@
       justify-content: space-around;
       flex-wrap: wrap;
     }
-    @include breakpoint(max-width 500px) {
-      padding: 0;
+    @include breakpoint(max-width 750px) {
       align-items: flex-start;
+      padding: 20px 0;
       margin-bottom: 20px;
     }
     @include breakpoint(max-height 500px) {
@@ -50,10 +50,11 @@
       font-size: 18px;
       color: #fff;
       @include breakpoint(max-width 1200px) {
-        width: 300px;
+        width: 50%;
       }
-      @include breakpoint(max-width 500px) {
+      @include breakpoint(max-width 750px) {
         font-size: 15px;
+        width: 300px;
       }
       span {
         color: #fff;
@@ -92,7 +93,7 @@
   @include breakpoint(max-height 700px) {
      top: 120px;
   }
-  @include breakpoint(max-height 500px) {
+  @include breakpoint(max-height 600px) {
     position: relative;
     float: left;
     width: 100%;
@@ -101,7 +102,7 @@
     top: 0;
     margin: 0 0 60px;
   }
-  @include breakpoint(max-width 500px) {
+  @include breakpoint(max-width 750px) {
     position: relative;
     float: left;
     width: 100%;
@@ -111,6 +112,7 @@
     margin: 0 0 60px;
   }
   img {
+    position: relative;
     max-width:100%;
     max-height:100%;
   }
@@ -123,7 +125,7 @@
   @include breakpoint(max-height 700px) {
     top: 320px;
   }
-  @include breakpoint(max-height 500px) {
+  @include breakpoint(max-height 600px) {
     flex-direction: row;
     position: absolute;
     top: auto;
@@ -132,7 +134,7 @@
     transform: translate(-50%);
     height: 35px;
   }
-  @include breakpoint(max-width 500px) {
+  @include breakpoint(max-width 750px) {
     flex-direction: row;
     position: absolute;
     top: auto;
