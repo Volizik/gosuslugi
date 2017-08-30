@@ -49,4 +49,20 @@ $(document).ready(function () {
         $(this).toggleClass('rotate180');
     });
     //!show statements in mobile--------------------------------------------------
+
+
+    //modal-send-------------------------------------------------------------
+
+    $(document).on('click', '.modal-btn', function () {
+        event.preventDefault();
+        $('.send').fadeIn('fast');
+        return false;
+    });
+    $(document).click(function(e) {
+        if ($(e.target).closest(".send__form").length) return;
+        $('.send').fadeOut('fast');
+        e.stopPropagation();
+    });
+
+    //!modal-send------------------------------------------------------------
 });

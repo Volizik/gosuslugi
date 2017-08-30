@@ -3,6 +3,7 @@
   float: left;
   width: 100%;
   background-color: #0b234f;
+  z-index: 1;
   &__menu-btn {
     display: none;
     width: 50px;
@@ -99,5 +100,86 @@
     img {
       max-width: 100%;
     }
+  }
+}
+
+.send {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  background-color: rgba(255,255,255, .7);
+  &__form {
+    max-width: 490px;
+    width: 100%;
+    position: absolute;
+    z-index: 2001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $blue;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 40px 3px #1f3f69;
+  }
+  &__field {
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+    span {
+      display: block;
+      padding: 5px;
+      width: 100%;
+      sup {
+        color: #ac6066;
+      }
+    }
+    input {
+      position: relative;
+      width: 100%;
+      height: 43px;
+      color: #000;
+      padding-left: 15px;
+      font-size: 18px;
+    }
+  }
+  p {
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+    margin: 10px 0;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      top: 49%;
+      left: 0;
+      background-color: #fff;
+      z-index: 1;
+    }
+    span {
+      position: relative;
+      font-size: 15px;
+      display: block;
+      width: 86px;
+      padding: 10px;
+      background-color: $blue;
+      margin: 0 auto;
+      box-sizing: border-box;
+      z-index: 2;
+    }
+  }
+  button {
+    position: relative;
+    width: 100%;
+    font-size: 30px;
+    box-sizing: border-box;
+    border: none;
+    font-family: $MuseoCyrl;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #51af9d;
   }
 }
