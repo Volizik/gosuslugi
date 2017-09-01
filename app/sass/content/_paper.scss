@@ -32,6 +32,7 @@
       h2 {
         margin-top: 15px;
         margin-bottom: 15px;
+        padding-bottom: 15px;
         text-transform: uppercase;
       }
       p {
@@ -81,6 +82,7 @@
         position: relative;
         float: left;
         margin-right: 20px;
+        width: 64px;
         @include breakpoint(max-width 600px) {
           width: 40px;
           margin-bottom: 20px;
@@ -107,12 +109,6 @@
           width: 100%;
         }
       }
-    }
-  }
-  .social,
-  .tinkoff-link {
-    @include breakpoint(max-width 750px) {
-      display: none;
     }
   }
 }
