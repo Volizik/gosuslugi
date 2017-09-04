@@ -63,6 +63,20 @@ $(document).ready(function () {
         $('.send').fadeOut('fast');
         e.stopPropagation();
     });
+    $(document).on('click', '.send__form>span', function () {
+        $('.send').fadeOut('fast');
+    });
 
     //!modal-send------------------------------------------------------------
+
+
+    //modal-input(type="checkbox")------------------------------------------------------------
+    $(document).on('click', '#check-kadast', function () {
+        if ($(this).is(':checked')) {
+            $('.send__field--kadast').attr('disabled', 'disabled');
+        } else {
+            $('.send__field--kadast').removeAttr('disabled');
+        }
+    });
+    //!modal-input(type="checkbox")------------------------------------------------------------
 });
